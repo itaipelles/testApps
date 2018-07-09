@@ -14,7 +14,8 @@ module.exports = {
       .then(() => console.log("WROTE A BACKEND FILE"))
       .catch(e => console.log("ERROR: ", e));
   },
-  onEvent: () => {},
+  onEvent: ({ eventType, eventPayload }) => {
+  console.log(eventType)},
   getAppManifest: () => {}
 };
 
