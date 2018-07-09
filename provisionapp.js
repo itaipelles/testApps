@@ -18,8 +18,8 @@ module.exports = {
       )
       .then(() =>
       _editorSDK.vfs.writeFile("token", {
-          path: ".schemas/TestCollection.json",
-          content: '{“id”:“TestCollection”,“displayName”:“TestCollection”,“displayField”:“title”,“fields”:{“title”:{“displayName”:“Title”,“type”:“text”}}}'
+          path: ".schemas/NewCollectionName2.json",
+          content: '{”id”:“NewCollectionName2”,“displayName”:“NewCollectionName2”,“displayField”:“title”,“fields”:{“title”:{“displayName”:“Title”,“type”:“text”}}}'
         })
       )      
       .then(() => console.log("WROTE A BACKEND FILE"))
