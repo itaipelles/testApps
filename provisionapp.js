@@ -18,4 +18,4 @@ module.exports = {
   getAppManifest: () => {}
 };
 
-//App ID: 1539e3a4-6b37-4e5c-7c5d-5ec1254513aa
+//App ID: 153fb5e0-401e-1978-704f-6317f9bb734e
