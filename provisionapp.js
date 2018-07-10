@@ -16,14 +16,14 @@ module.exports = {
           content: "// test me"
         })
       )
+      .then(() => console.log("Created backend file"))
       .then(() =>
       _editorSDK.vfs.writeFile("token", {
-          path: ".schemas/NewCollectionName2.json",
-          content: '{”id”:“NewCollectionName2”,“displayName”:“NewCollectionName2”,“displayField”:“title”,“fields”:{“title”:{“displayName”:“Title”,“type”:“text”}}}'
+          path: ".schemas/TestCollection.json",
+          content: '{"id":"TestCollection","displayName":"TestCollection","displayField":"title","fields":{"title":{"displayName":"Booboo","type":"text"}}}'
         })
       )      
-      .then(() => console.log("WROTE A BACKEND FILE"))
-      .then(() => console.log("Create collection"))
+      .then(() => console.log("Collection has been created"))
       .catch(e => console.log("ERROR: ", e));
   }
   },
